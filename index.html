@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<script>
+    //Program-1
+    function checkLeapYear(year) {
+        if ((0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {
+            console.log(year + ' is a leap year');
+        } else {
+            console.log(year + ' is not a leap year');
+        }
+    }
+    const year = prompt("Enter a year: ");
+    checkLeapYear(year);
+
+    //Program-2
+    var num1 = prompt("Enter first number: ");
+    var num2 = prompt("Enter second number: ");
+    num1=parseInt(num1);
+    num2=parseInt(num2);
+    console.log("The value of num1 + num2 is "+ (num1+num2));
+    console.log("The value of num1 - num2 is "+ (num1-num2));
+    console.log("The value of num1 * num2 is "+ (num1*num2));
+    console.log("The value of num1 / num2 is "+ (num1/num2));
+    console.log("The value of num1 % num2 is "+ (num1%num2));
+
+    //Program-3
+    function fun1(id, fun2)
+    {
+        fun2();  
+    }
+    function fun3() {
+        console.log('Task-6 of SIG WEB');
+    }
+    fun1(1, fun3);
+
+    //Program-4
+    var array1 = ['a','b','c']
+    var array2 = ['c','c','d','e'];
+    var array3 = [];
+    for(var i=0;i<array1.length;i++){
+        if(array3.indexOf(array1[i]) == -1)
+        array3.push(array1[i])
+        console.log(array3)
+    }
+    for(let i=0;i<array2.length;i++){
+        if(array3.indexOf(array2[i]) == -1)
+        array3.push(array2[i])
+        console.log(array3)
+    }
+
+</script>
+<body>
+    <p>Here is Task-6</p>
+
+</body>
+</html>
